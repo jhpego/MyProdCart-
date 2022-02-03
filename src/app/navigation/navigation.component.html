@@ -1,0 +1,6 @@
+<ul class="nav-menu">
+    <li *ngFor="let currNav of navigation; let i = index">
+        <a routerLinkActive="active" 
+        [routerLink]="currNav.url">{{ currNav.label }}</a>
+    </li>
+</ul>
